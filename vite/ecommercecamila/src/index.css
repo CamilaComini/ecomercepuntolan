@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#body {
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: auto;
+}
+.li a {
+  list-style: none;
+  font-style: none;
+  text-decoration: none;
+  text-decoration: none;
+}
+li{
+  float: left;
+}
+li a {
+  width: auto;
+  right: auto;
+  background-color: black;
+  color: red;
+  display: block;
+  text-align: center;
+  padding: 16px 16px;
+  border-right: 1px solid black;
+}
+li a:hover{
+  background-color: black;
+  color: aliceblue;
+}
+img{
+width:80px;
+height:80px;
+}
+h1 { 
+  color:black;
+  font-size: 50px;
+  align-items:center;
+}
