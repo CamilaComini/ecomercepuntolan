@@ -1,0 +1,83 @@
+[
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626422083/in/dateposted-public/"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 3,
+		"category": "Gamer",
+		"title": "Auricualres Gamer Sof",
+		"price": 21000,
+		"description": "Escucha cada detalle con nuestros auriculares gaming de alta fidelidad. Sonido envolvente, micrófono nítido y comodidad duradera te mantienen inmerso en el juego en todo momento",
+		"stock": 10,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625326512/in/dateposted-public/"
+	},
+	{
+		"id": 4,
+		"category": "Hardware",
+		"title": "Notebook Seagate 15¨",
+		"price": 500000,
+		"description": "Sus dispositivos resaltan todas estas características que generan un óptimo rendimiento con el objetivo de darte una gran experiencia de uso.Se caracteriza por su eficiencia y buen funcionamiento, que sumado a su reducido consumo energético lo vuelven un notebook indispensable para funciones estándar.",
+		"stock": 3,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626422018/in/dateposted-public/"
+	},
+	{
+		"id": 5,
+		"category": "Accesorios",
+		"title": "Auriculares inalambricos Jbl",
+		"price": 70000,
+		"description": "Libertad sin cables con nuestros auriculares inalámbricos diseñados para el jugador moderno. Experimenta un audio inmersivo, libertad de movimiento y comodidad durante horas de juego",
+		"stock": 20,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625326457/in/dateposted-public/"
+	},
+	{
+		"id": 6,
+		"category": "Accesorios",
+		"title": "Reloj Digital Suono Color",
+		"price": 6000,
+		"description": "Domina tu tiempo con nuestro reloj digital multifunción. Características avanzadas, diseño elegante y durabilidad excepcional te mantienen en control, tanto dentro como fuera del juego",
+		"stock": 31,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626665250/in/dateposted-public/"
+	},
+	{
+		"id": 7,
+		"category": "Accesorios",
+		"title": "Auricular inalambrico Think Plus",
+		"price": 80000,
+		"description": "Elimina los cables y sumérgete en el sonido con nuestros auriculares inalámbricos de alta calidad. Diseño ergonómico, conexión estable y audio de primera te permiten jugar con estilo y comodidad",
+		"stock": 8,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626678315/in/dateposted-public/"
+	},
+	{
+		"id": 8,
+		"category": "Accesorios",
+		"title": "Reloj Digital Noga",
+		"price": 9000,
+		"description": "Lleva la tecnología contigo con nuestro reloj digital de última generación. Pantalla nítida, funciones inteligentes y estilo moderno te mantienen sincronizado y en movimiento durante todo el día",
+		"stock": 100,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625340087/in/dateposted-public/"
+	},
+	{
+		"id": 9,
+		"category": "Gamer",
+		"title": "Teclado Logitech k-903",
+		"price": 40000,
+		"description": "Domina cada tecla con nuestro teclado gaming diseñado para rendimiento extremo. Retroiluminación personalizable, teclas programables y un diseño ergonómico te mantienen un paso adelante en cada partida",
+		"stock": 4,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625340227/in/dateposted-public/"
+	}
+]
