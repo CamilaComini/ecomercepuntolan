@@ -4,7 +4,7 @@ import data from '../data/products.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export const ItemDetailContainer = () => {
+export const ItemDetailConteiner = () => {
 	const [item, setItem] = useState(null);
 	const { id } = useParams();
 
@@ -27,10 +27,11 @@ export const ItemDetailContainer = () => {
 		return (null);
 
 	return (
-        <Container className="mt-4">
-            <div>{product.title}</div>
-            <img src={pictureUrl.img} alt={product.title} />
-        </Container>
+        <>
+            <div>{item.title}</div>
+            <img src={item.img} alt={item.title} />
+			<div>{item.description}</div>
+        </>
 		
 	);
 };
