@@ -4,8 +4,10 @@ import {Link} from "react-router-dom";
 
 export const Item = ({product}) => {
     return (
-        <Card className='card'>
-            <Card.Img variant="top" src={product.pictureUrl}/>
+        <Card className="mx-2 mt-2 mb-4" style={{ width: "18rem" }}>
+            <Link to={`/item/${item.id}`}>
+                <Card.Img className="img-fluid" variant="top" src={item.pictureUrl} />
+            </Link>
             <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>
@@ -18,3 +20,4 @@ export const Item = ({product}) => {
         </Card>
     );
 };
+

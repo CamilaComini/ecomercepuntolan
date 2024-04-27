@@ -1,10 +1,21 @@
-import logopuntolan from "../assets/logopuntolan.ico";
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+import '../App.css';
 
 export const CartWidget = () => {
-	return (
-	<>
-    <img className="cart" src={logopuntolan} alt="PuntoLan"  height={30} />
-    <span>2</span>
-    </>
-	);
+    const { cart } = useContext(CartContext);
+
+    const totalProducts = cart.reduce(
+        (total, products) => total + products.quantity,
+    0
+);
+    return (
+        <div className='cartWidget-header'>
+    <Link to='/checkout'>
+        <img src={logopuntolan} alt='' className='cart' heigth= {20}/>
+        <strong className='cartWidget-total'>{totalProducts}</strong>
+    </Link>
+        </div>
+);
 };
