@@ -5,14 +5,14 @@ import { CartWidget } from './CartWidget';
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Brand } from "./Brand";
+import {Cart} from "./Cart";
 
-export const NavBar = () => {
+export const Navbar = () => {
     return (
         <NavBar expand="lg" bg="dark" data-bs-theme="dark" >
             <Container>
                 <NavBar.Brand href="/">Punto Lan</NavBar.Brand>
-                <Brand />
+                <Cart />
                 <NavBar.Toggle aria-controls="basic-navbar-nav" />
                 <NavBar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
