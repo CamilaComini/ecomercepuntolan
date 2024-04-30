@@ -1,3 +1,10 @@
+Punto lan computacion! 
+
+Proyecto realizado para curso de React impartido por Coderhouse donde se aplicaron conceptos tales como:
+
+Promesas, Asincronías, Hooks, Props, Enrutamiento y Navegación, Eventos, Contexto y conexión a BD con Firebase.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
