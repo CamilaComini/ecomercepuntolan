@@ -7,6 +7,7 @@ import './App.css';
 import { ProductDetail } from './components/ProductDetail';
 import { Cart } from './components/Cart';
 import { ToastContainer } from 'react-toastify';
+import Footer  from './components/Footer';
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 						<Route path="/item/:id" element={<ProductDetail />} />
 						<Route path="*" element="ERROR 404" />
 					</Routes>
+					< Footer />
 				</BrowserRouter>
 			</CartProvider>
 		</>

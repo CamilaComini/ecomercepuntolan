@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "react-ecommercepuntolan-844a0",
     "public": "public",
+    "site": "ecommercepuntolan",
     "ignore": [
       "firebase.json",
       "**/.*",

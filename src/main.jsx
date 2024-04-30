@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App.jsx';
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
 	apiKey: "AIzaSyDn887cWOi-w7e6zQOqEhkeIXJHnWxpjRg",
@@ -10,8 +10,8 @@ const firebaseConfig = {
 	projectId: "react-ecommercepuntolan-844a0",
 	storageBucket: "react-ecommercepuntolan-844a0.appspot.com",
 	messagingSenderId: "855600059602",
-	appId: "1:855600059602:web:fbde81ddca78aab15ac90b",
-	measurementId: "G-2MXKPLXNZ8"
+	appId: "1:855600059602:web:ec310f09636ca7895ac90b",
+	measurementId: "G-TTZCBPDWJ7"
 };
 
 const app = initializeApp(firebaseConfig);
