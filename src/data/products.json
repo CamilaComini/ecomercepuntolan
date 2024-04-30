@@ -1,12 +1,12 @@
 [
 	{
 		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
+		"category": "Accesorios",
+		"title": "Auriculares Bluetooth Buds 3 Lite",
+		"price": 18000,
 		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+		"stock": 2,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fulltechnology.com.ar%2Fproductos%2Fauricular-xiaomi-inalambrico-redmi-buds-3-lite-certificado%2F&psig=AOvVaw1lXhbeIA_UJ8-oIOBMbyZ3&ust=1714531347176000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjgwZH16IUDFQAAAAAdAAAAABAE"
 	},
 	{
 		"id": 2,
@@ -79,5 +79,113 @@
 		"description": "Domina cada tecla con nuestro teclado gaming diseñado para rendimiento extremo. Retroiluminación personalizable, teclas programables y un diseño ergonómico te mantienen un paso adelante en cada partida",
 		"stock": 4,
 		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625340227/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+	},
+	{
+		"id": 1,
+		"category": "Software",
+		"title": "Teclado philips",
+		"price": 20000,
+		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"stock": 3,
+		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
+	},
+	{
+		"id": 2,
+		"category": "Accesorios",
+		"title": "Parlante Jbl",
+		"price": 60000,
+		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"stock": 5,
+		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
 	}
 ]

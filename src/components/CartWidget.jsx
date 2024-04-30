@@ -1,21 +1,10 @@
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
-import '../App.css';
+import cartImg from '../assets/png-transparent-shopping-cart-graphy-shopping-cart-furniture-rectangle-black-removebg-preview.png'
 
-export const CartWidget = () => {
-    const { cart } = useContext(CartContext);
-
-    const totalProducts = cart.reduce(
-        (total, products) => total + products.quantity,
-    0
-);
-    return (
-        <div className='cartWidget-header'>
-    <Link to='/checkout'>
-        <img src={logopuntolan} alt='' className='cart' heigth= {20}/>
-        <strong className='cartWidget-total'>{totalProducts}</strong>
-    </Link>
-        </div>
-);
+export const CartWidget = ({ cant }) => {
+	return (
+		<>
+			<img src={cartImg} title="Carrito" className="cart" height={120}/>
+			{cant !== 0 && <p className="contador-cart">{cant}</p>}
+		</>
+	);
 };

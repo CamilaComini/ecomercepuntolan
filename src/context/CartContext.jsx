@@ -1,74 +1,55 @@
-import { createContext, useEffect, useState } from "react";
-import { agregarAlCarrito } from "../helpers/agregarAlCarrito";
+import { createContext, useState } from 'react';
+import nots from '../helpers/useNotifications';
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-const [quantity, setquantity] = useState(1);
-const [item, setItem] = useState(null);
-const carritoLocalStorage = JSON.parse(localStorage.getItem("carrito")) || [];
-const [total, setTotal] = useState(0);
-const [carrito, setCarrito] = useState(carritoLocalStorage);
-const [stockDisponible, setStockDisponible] = useState({});
+	const [cart, setCart] = useState([]);
 
-useEffect(() => {
-    const stock = {};
-    carrito.forEach((prod) => {
-        stock[prod.id] = prod.stock;
-    });
-    setStockDisponible(stock);
-}, [carrito]);
+	const { notiToastWarn, notiToastSuccess, notiToastError } = nots();
 
-const handleSumar = () => {
-    quantity < item.stock && setquantity(quantity + 1);
-};
+	const removeList = () => setCart([]);
 
-const handleRestar = () => {
-    quantity > 1 && setquantity(quantity - 1);
-};
+	const addItem = (item, cantidad) => {
+		const itemAAgregar = { ...item, cantidad };
+		const carrito2 = [...cart];
+		const estaEnCart = carrito2.find((item) => item.id === itemAAgregar.id);
+		if (estaEnCart) {
+			estaEnCart.cantidad += cantidad;
+			notiToastWarn();
+		} else {
+			carrito2.push(itemAAgregar);
+			setCart(carrito2);
+			notiToastSuccess();
+		}
+	};
 
-const handleAgregarAlCarrito = (item, quantity) => {
-    agregarAlCarrito(item, quantity, carrito, setCarrito);
-};
+	const deleteItem = (id) => {
+		const lugarEnCarrito = cart.findIndex((prod) => prod.id === id);
+		const carritoAlt = [...cart];
+		carritoAlt.splice(lugarEnCarrito, 1);
+		setCart(carritoAlt);
+		notiToastError();
+	};
 
-const quantityEnCarrito = () => {
-    return carrito.reduce((acc, prod) => acc + prod.quantity, 0);
-};
+	const precioTotal = () => {
+		return cart.reduce((acc, item) => acc + item.price * item.cantidad, 0);
+	};
 
-useEffect(() => {
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-}, [carrito]);
-
-const mostrarCarrito = quantityEnCarrito() > 0;
-
-const vaciarCarrito = () => {
-    if (setCarrito) {
-    setCarrito([]);
-    } else {
-    return null;
-    }
-};
-
-return (
-    <CartContext.Provider
-    value={{
-        item,
-        setItem,
-        quantity,
-        setquantity,
-        carrito,
-        setCarrito,
-        mostrarCarrito,
-        handleSumar,
-        handleRestar,
-        total,
-        setTotal,
-        handleAgregarAlCarrito,
-        quantityEnCarrito,
-        vaciarCarrito,
-    }}
-    >
-    {children}
-    </CartContext.Provider>
-);
+	return (
+		<>
+			<CartContext.Provider
+				value={{
+					cart,
+					setCart,
+					removeList,
+					addItem,
+					precioTotal,
+					deleteItem,
+				}}
+			>
+				{children}
+			</CartContext.Provider>
+		</>
+	);
 };

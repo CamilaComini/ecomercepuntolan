@@ -1,8 +1,8 @@
-import { CartProvider } from './context/CartContext.jsx';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from './App.jsx';
-import './index.css';
-import { initializeApp } from "firebase/app";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './App.jsx';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
 	apiKey: "AIzaSyDn887cWOi-w7e6zQOqEhkeIXJHnWxpjRg",
@@ -14,13 +14,10 @@ const firebaseConfig = {
 	measurementId: "G-2MXKPLXNZ8"
 };
 
-initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <CartProvider>
-        <App />
-    </CartProvider>
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
 );
-
-
-

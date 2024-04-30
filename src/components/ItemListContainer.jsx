@@ -1,30 +1,45 @@
-import { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import Container from "react-bootstrap/Container";
-import { ItemList } from "./ItemList";
+import { ItemList } from './ItemList';
+import { useEffect, useState } from 'react';
 import {
-    getFirestore,
-    getDocs,
-    query,
-    where,
-    collection,
-} from "firebase/firestore";
-
+	collection,
+	getDocs,
+	getFirestore,
+	query,
+	where,
+} from 'firebase/firestore';
+import { useParams } from 'react-router-dom';
+import { Loading } from './Loading';
 
 export const ItemListContainer = () => {
-const [products, setProducts] = useState([]);
-const { id } = useParams();
+	const [cars, setCars] = useState([]);
+	const category = useParams().categoria;
 
-useEffect(() => {
-    const db = getFirestore();
-    let refCollection;
+	useEffect(() => {
+		const db = getFirestore();
+		const itemCollection = collection(db, 'items');
 
-    if (!id) refCollection = collection(db, "items"); 
-    else{
-        refCollection = query(
-            collection(db, "items"),
-            where("categoryId","==", id)
-        );
-    }
-});
-}
+		if (category) {
+			const q = query(
+				collection(db, 'items'),
+				where('category', '==', category)
+			);
+			getDocs(q).then((response) =>
+				setCars(
+					response.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+				)
+			);
+		} else {
+			getDocs(itemCollection).then((response) => {
+				setCars(
+					response.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+				);
+			});
+		}
+	}, [category]);
+
+	return (
+		<div className="container-cards">
+			{cars.length === 0 ? <Loading /> : <ItemList cars={cars} />}
+		</div>
+	);
+};

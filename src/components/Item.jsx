@@ -1,23 +1,37 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import {Link} from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { NavLink } from 'react-router-dom';
 
-export const Item = ({product}) => {
-    return (
-        <Card className="mx-2 mt-2 mb-4" style={{ width: "18rem" }}>
-            <Link to={`/item/${item.id}`}>
-                <Card.Img className="img-fluid" variant="top" src={item.pictureUrl} />
-            </Link>
-            <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
-                <Card.Text>{product.description}</Card.Text>
-                <Card.Text>{product.category}</Card.Text>
-                <Card.Text>{product.price}</Card.Text>
-                <Link to={`./item/${product.id}`}>
-                    <Button variant="primary">Ver mas</Button>
-                </Link>
-            </Card.Body>
-        </Card>
-    );
+import { Botones } from './Botones';
+
+export const Item = ({ props }) => {
+	return (
+		<>
+			<Card style={{ width: '18rem' }}>
+				<Card.Img variant="top" src={props.img} className="card-img" />
+				<Card.Body>
+					<Card.Title>
+						{props.brand} {props.model}
+					</Card.Title>
+					<Card.Subtitle>
+						Precio: $ {props.price.toLocaleString()}
+					</Card.Subtitle>
+					<Card.Text className="mb-1">
+						Categoria: {props.category}
+					</Card.Text>
+
+					<Button
+						className="mb-2"
+						variant="outline-secondary"
+						to={`/item/${props.id}`}
+						as={NavLink}
+						size="sm"
+					>
+						Info
+					</Button>
+					<Botones item={props} />
+				</Card.Body>
+			</Card>
+		</>
+	);
 };
-

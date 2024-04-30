@@ -1,21 +1,159 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.logo-menu {
-    height: 150px;
+
+body {
+	background-color: white;
 }
-navbar-collapse {
-    flex-grow: 0;
+
+.container-home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 3cm;
 }
-a .nav-link {
-    font: #00adb5 !important;
+
+.titulo {
+	font-size: 3.2em;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 20px;
 }
-.div-img {
-    max-height: 400px;
+
+.video-container {
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	margin-top: 20px;
 }
-.page-not-found{
-    width: 100vh;
+
+.video-container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+p {
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.container-product-detail {
+	padding: 30px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-detail {
+	border-radius: 10px;
+	border: 2px solid;
+	transition: 0.5s;
+	width: 50%;
+}
+
+.img-detail:hover,
+.item-detalles:hover {
+	box-shadow: 5px 5px 10px;
+}
+
+.item-detalles {
+	background-color: rgb(211, 24, 24);
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 2px solid;
+	border-radius: 10px;
+	transition: 0.5s;
+	width: 50%;
+	height: 45vh;
+}
+
+.cssNav {
+	background-color: rgb(223, 26, 26);
+	padding-right: 50px;
+	padding-left: 50px;
+	box-shadow: 0px 3px 10px;
+}
+
+.text-links {
+	color: black;
+}
+
+.cart {
+	height: 35px;
+	width: 35px;
+}
+
+.empty-cart-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contador-cart {
+	background-color: white;
+	height: 22px;
+	width: 22px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	font-weight: 700;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 0;
+	margin-left: 5px;
+	color: white;
+}
+
+.container-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px 0;
+}
+
+.card-img {
+	height: 190px;
+}
+
+#basic-nav-dropdown {
+	color: white;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+}
+
+.card {
+	transition: 0.5s;
+}
+
+.card:hover {
+	box-shadow: 5px 5px 10px 0px;
+}
+
+.btn-font {
+	font-size: 15px;
+	margin-right: 10px;
 }
