@@ -1,31 +1,28 @@
-import { NavLink } from 'react-router-dom'
-import Nav from 'react-bootstrap/Nav'
+import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
-const Footer = () => {
+export const Footer = () => {
     return (
-        <footer className="footer" variant="bot">
-            <div className="footer-ull">
-                <span> 
-                <a href="#" >Punto Lan</a>
+        <footer className="footer">
+            <div className="footer-container">
+                <span>
+                    <a href="#">Punto Lan</a>
                 </span>
-                <ul>
-                    <li>
-                        <Nav.Link to="/" as={NavLink}>Inicio</Nav.Link>
-                    </li>
-                    <li>
-                        <Nav.Link to="/category/Accesorios" as={NavLink}>Accesorios</Nav.Link>
-                    </li>
-                    <li>
-                        <Nav.Link to="/category/Software" as={NavLink}>Software</Nav.Link>
-                    </li>
-                    <li>
-                        <Nav.Link to="/category/Hardware" as={NavLink}>Hardware</Nav.Link>
-                    </li>
-                </ul>
+                <Nav className="footer-nav">
+                    <Nav.Item>
+                        <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link as={NavLink} to="/category/Accesorios">Accesorios</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link as={NavLink} to="/category/Gamer">Software</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link as={NavLink} to="/category/Hardware">Hardware</Nav.Link>
+                    </Nav.Item>
+                </Nav>
             </div>
         </footer>
-
-    )
-}
-
-export default Footer
+    );
+};

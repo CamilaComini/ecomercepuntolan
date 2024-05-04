@@ -4,32 +4,32 @@ import { NavLink } from 'react-router-dom';
 
 import { Botones } from './Botones';
 
-export const Item = ({ props }) => {
+export const Item = ({ product }) => {
 	return (
 		<>
 			<Card style={{ width: '18rem' }}>
-				<Card.Img variant="top" src={props.img} className="card-img" />
+				<Card.Img variant="top" src={product.img} className="card-img" />
 				<Card.Body>
 					<Card.Title>
-						{props.brand} {props.model}
+						{product.title} {product.category}
 					</Card.Title>
 					<Card.Subtitle>
-						Precio: $ {props.price.toLocaleString()}
+						Precio: $ {product.price.toLocaleString()}
 					</Card.Subtitle>
 					<Card.Text className="mb-1">
-						Categoria: {props.category}
+						Categoria: {product.category}
 					</Card.Text>
 
 					<Button
 						className="mb-2"
 						variant="outline-secondary"
-						to={`/item/${props.id}`}
+						to={`/item/${product.id}`}
 						as={NavLink}
 						size="sm"
 					>
 						Info
 					</Button>
-					<Botones item={props} />
+					<Botones item={product} />
 				</Card.Body>
 			</Card>
 		</>

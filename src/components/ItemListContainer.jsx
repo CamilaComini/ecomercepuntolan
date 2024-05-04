@@ -1,36 +1,44 @@
-import { ItemList } from './ItemList';
 import { useEffect, useState } from 'react';
-import {
-	collection,
-	getDocs,
-	getFirestore,
-	query,
-	where,
-} from 'firebase/firestore';
+import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 import { useParams } from 'react-router-dom';
-import { Loading } from './Loading';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+import { ItemList } from './ItemList'; 
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-
-    const { id } = useParams();
+    const [productImages, setProductImages] = useState([]);
+    const { id } = useParams().id;
 
     useEffect(() => {
         const db = getFirestore();
         setLoading(true);
         let refCollection;
 
-        if (!id) refCollection = collection(db, "items")
+        if (!id) refCollection = collection(db, "products")
         else {
-            refCollection = query(collection(db, "items"), where("categoryId", "==", id))
+            refCollection = query(collection(db, "products"), where("categoryId", "==", id))
         }
 
         getDocs(refCollection).then((snapshot) => {
-            setProducts(snapshot.docs.map((doc) => {
+            const productsData = snapshot.docs.map((doc) => {
                 return { id: doc.id, ...doc.data() };
-            }));
+            });
+            setProducts(productsData);
             setLoading(false);
+
+            const storage = getStorage();
+            const promises = productsData.map((product) => {
+                const imageUrlRef = ref(storage, 'productos/' + product.id); 
+                return getDownloadURL(imageUrlRef);
+            });
+            Promise.all(promises).then((urls) => {
+                setProductImages(urls);
+            }).catch((error) => {
+                console.error('Error al obtener las URLs de las imágenes:', error);
+            });
+        }).catch((error) => {
+            console.error('Error al obtener los productos:', error);
         });
     }, [id]);
 
@@ -46,7 +54,8 @@ export const ItemListContainer = () => {
         <div className="container-cards">
             <Banner gretings={"¡Bienvenidos a Punto Lan!"} />
             <div>
-                <ItemList products={products} />
+            <h1>Lista de productos:</h1>
+            <ItemList products={products} productImages={productImages} />
             </div>
         </div>
 

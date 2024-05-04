@@ -15,8 +15,7 @@ export const CartTable = () => {
 			<Table striped bordered hover size="sm">
 				<thead>
 					<tr>
-						<th>Marca y Modelo</th>
-
+						<th>Producto</th>
 						<th>Precio</th>
 						<th>Cantidad</th>
 						<th>Sub-Total</th>
@@ -24,21 +23,21 @@ export const CartTable = () => {
 					</tr>
 				</thead>
 				<tbody>
-					{cart.map((item) => (
-						<tr key={item.id}>
+					{cart.map((product) => (
+						<tr key={product.id}>
 							<td>
-								{item.brand} {item.model}
+								{product.title} {product.category}
 							</td>
 
-							<td>$ {item.price.toLocaleString()}</td>
-							<td>{item.cantidad}</td>
+							<td>$ {product.price.toLocaleString()}</td>
+							<td>{product.stock}</td>
 							<td>
 								${' '}
-								{(item.price * item.cantidad).toLocaleString()}
+								{(product.price * product.stock).toLocaleString()}
 							</td>
 							<td style={{ textAlign: 'center' }}>
 								<img
-									onClick={() => deleteItem(item.id)}
+									onClick={() => deleteItem(product.id)}
 									src={deleteIcon}
 									style={{
 										height: '25px',

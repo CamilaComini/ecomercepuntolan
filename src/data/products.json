@@ -4,188 +4,80 @@
 		"category": "Accesorios",
 		"title": "Auriculares Bluetooth Buds 3 Lite",
 		"price": 18000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
+		"description": "Auriculares Inalambricos Xiaomi Redmi Buds 3 Lite NegroConexión sencilla. Batería de hasta 18 horas de duración. Ligeros y suaves: El diseño ergonómico aporta comodidad y mantiene los Redmi Buds 3 Lite seguros en las orejas incluso durante el ejercicio. Bluetooth 5.2: Transmisión estable con funciones antinterferencias eficaces. Puerto de carga tipo C: una sola carga es suficiente para hasta 5 horas de uso. Rendimiento excepcional para ejercicio, música, películas y llamadas de larga duración.Anulación de ruido para llamadas: Audio de alta resolución para llamadas y tecnología antinterferencias. Modo de latencia baja para juegos: Sonido preciso que proporciona ventaja en la competición. Acciones táctiles sensibles: Toca dos veces, mantén pulsado o realiza una de las otras acciones táctiles para pasar de un modo a otro.",
 		"stock": 2,
 		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fulltechnology.com.ar%2Fproductos%2Fauricular-xiaomi-inalambrico-redmi-buds-3-lite-certificado%2F&psig=AOvVaw1lXhbeIA_UJ8-oIOBMbyZ3&ust=1714531347176000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjgwZH16IUDFQAAAAAdAAAAABAE"
 	},
 	{
 		"id": 2,
 		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
+		"title": "Auriculares Bluetooth E7s",
+		"price": 9000,
+		"description": "El E7S ofrece un sonido nítido y envolvente, con una respuesta de frecuencia equilibrada. Con cancelación de ruido activa, puedes sumergirte en tu música favorita sin distracciones del entorno. También te permite ajustar el volumen, cambiar de canción o contestar llamadas con facilidad. La duración de la batería del auricular E7S es impresionante, ofreciendo varias horas de reproducción continua. Además, viene con un estuche de carga portátil que te permite recargar los auriculares sobre la marcha, asegurándote de que siempre estén listos para su uso",
 		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpartesinformaticas.com%2Fproducto%2Fauricular-bluetooth-5-3-true-wireless-headset-e7s-charge-box%2F&psig=AOvVaw3hczREaFf5NlY6fWpe5Snm&ust=1714860868816000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKi1otnA8oUDFQAAAAAdAAAAABAE"
 	},
 	{
 		"id": 3,
 		"category": "Gamer",
-		"title": "Auriculares Gamer Sof",
-		"price": 21000,
-		"description": "Escucha cada detalle con nuestros auriculares gaming de alta fidelidad. Sonido envolvente, micrófono nítido y comodidad duradera te mantienen inmerso en el juego en todo momento",
+		"title": "Kit Tira Luces Led 5050 RGB",
+		"price": 20000,
+		"description": "Debido a su protección IP64, estas luminarias están diseñadas para ser utilizadas tanto en interiores como en exteriores. Podrás decorar galerías, jardines y todos los sectores al aire libre del modo que más te guste y sin preocuparte por posibles precipitaciones o nevadas. Soportan la exposición al polvo y al agua, lo que les otorga una mayor durabilidad y resistencia.",
 		"stock": 10,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625326512/in/dateposted-public/"
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdiegocomputacion.com.ar%2Fproducto%2Ftira-luces-led-rgb-5-mts-5050-kit-completo-control-remoto%2F&psig=AOvVaw1C9BHaOZzGkgdV5wSHfprK&ust=1714861158160000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOi5uOPB8oUDFQAAAAAdAAAAABAL"
 	},
 	{
 		"id": 4,
 		"category": "Hardware",
-		"title": "Notebook Seagate 15¨",
-		"price": 500000,
-		"description": "Sus dispositivos resaltan todas estas características que generan un óptimo rendimiento con el objetivo de darte una gran experiencia de uso.Se caracteriza por su eficiencia y buen funcionamiento, que sumado a su reducido consumo energético lo vuelven un notebook indispensable para funciones estándar.",
-		"stock": 3,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626422018/in/dateposted-public/"
+		"title": "Tarjeta de Memoria SanDisk 64gb",
+		"price": 11000,
+		"description": "La Tarjeta de memoria SanDisk SDSQUNR-064G-GN3MA Ultra de 64GB es la solución perfecta para ampliar la capacidad de almacenamiento de tus dispositivos electrónicos. Con su formato MicroSDXC, es compatible con una amplia variedad de smartphones, cámaras y otros dispositivos. Gracias a su velocidad de lectura de 100 MB/s y su clase de velocidad 10, podrás disfrutar de un rendimiento rápido y fluido al transferir y acceder a tus archivos. La interfaz UHS-I garantiza una conexión estable y confiable, mientras que la línea Ultra de SanDisk asegura la calidad y durabilidad que necesitas. Además, incluye un adaptador SD para que puedas utilizarla en dispositivos con ranura para tarjetas SD.",
+		"stock": 30,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftodopce.com.ar%2Fproducto%2Ftarjeta-de-memoria-sandisk-sdsquns-064g-gn3ma-ultra-con-adaptador-sd-64gb%2F&psig=AOvVaw2LGuBH-y-QeTlValnRBxVD&ust=1714861788782000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiC9Y_E8oUDFQAAAAAdAAAAABAF"
 	},
-	{
+	{	
 		"id": 5,
 		"category": "Accesorios",
 		"title": "Auriculares inalambricos Jbl",
 		"price": 70000,
 		"description": "Libertad sin cables con nuestros auriculares inalámbricos diseñados para el jugador moderno. Experimenta un audio inmersivo, libertad de movimiento y comodidad durante horas de juego",
-		"stock": 20,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625326457/in/dateposted-public/"
+		"stock": 4,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.powerzone.com.ar%2Fproductos%2Fauricular-bluetooth-jbl-tws-wave-200%2F&psig=AOvVaw3KoAbSX214msqjajlxgac9&ust=1714862036571000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjNhobF8oUDFQAAAAAdAAAAABAE"
 	},
 	{
 		"id": 6,
 		"category": "Accesorios",
-		"title": "Reloj Digital Suono Color",
-		"price": 6000,
-		"description": "Domina tu tiempo con nuestro reloj digital multifunción. Características avanzadas, diseño elegante y durabilidad excepcional te mantienen en control, tanto dentro como fuera del juego",
-		"stock": 31,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626665250/in/dateposted-public/"
+		"title": "Parlante Inalámbrico Soul Pets",
+		"price": 35000,
+		"description": "Parlante inalámbrico Soul Pets. 2 diseños y 2 colores a elección. Sonido de alta definición. Función manos libres con micrófono. Batería recargable: 400 mAh, duración aproximada 3 horas. Bluetooth: 5.0. Potencia de salida: 3W RMS. Frecuencia: 100 Hz - 20 KHz. Diámetro del altavoz: 40 mm. Contenido de la caja: parlante, cable de carga micro usb, manual de usuario",
+		"stock": 6,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cubecomunicaciones.com.ar%2Fproductos%2Fparlante-bluetooth-manos-libres-pets%2F&psig=AOvVaw21k0ThSeHXjF-oI2jvWnr2&ust=1714862467096000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjfudPG8oUDFQAAAAAdAAAAABAJ"
 	},
 	{
 		"id": 7,
 		"category": "Accesorios",
-		"title": "Auricular inalambrico Think Plus",
-		"price": 80000,
-		"description": "Elimina los cables y sumérgete en el sonido con nuestros auriculares inalámbricos de alta calidad. Diseño ergonómico, conexión estable y audio de primera te permiten jugar con estilo y comodidad",
+		"title": "SmartWatch Kieslect Rosa",
+		"price": 130000,
+		"description": "Tecnología, calidad y sofisticación definen al smartwatch de Kieslect. Sus diferentes funcionalidades logran que este reloj inteligente se convierta en un nuevo aliado para acompañarte en tu rutina de deporte, trabajo y ocio. Ayuda extra en tu muñeca. Para los amantes de la tecnología y la vida saludable, un reloj inteligente es el complemento ideal de todas las actividades diarias. Las diferentes herramientas que incorpora están pensadas para hacer tu vida más fácil. ¡Vas a tener varios dispositivos integrados en uno!",
 		"stock": 8,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626678315/in/dateposted-public/"
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hard-digital.com.ar%2Fproducto%2F6974377570197_reloj-xiaomi-kieslect-l11-pro-rosa&psig=AOvVaw1R9Bue7ynv409Y3UU7B85c&ust=1714862792079000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjCwe7H8oUDFQAAAAAdAAAAABAH"
 	},
 	{
 		"id": 8,
-		"category": "Accesorios",
-		"title": "Reloj Digital Noga",
-		"price": 9000,
-		"description": "Lleva la tecnología contigo con nuestro reloj digital de última generación. Pantalla nítida, funciones inteligentes y estilo moderno te mantienen sincronizado y en movimiento durante todo el día",
-		"stock": 100,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625340087/in/dateposted-public/"
-	},
-	{
-		"id": 9,
 		"category": "Gamer",
-		"title": "Teclado Logitech k-903",
-		"price": 40000,
-		"description": "Domina cada tecla con nuestro teclado gaming diseñado para rendimiento extremo. Retroiluminación personalizable, teclas programables y un diseño ergonómico te mantienen un paso adelante en cada partida",
-		"stock": 4,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53625340227/in/dateposted-public/"
+		"title": "Joystick Marvo gt-80",
+		"price": 250000,
+		"description": "MARCA MARVO. MODELO PRO GT-80. CONEXIÓN inalámbrica o por cable (cable USB). VERSIÓNES INALÁMBRICAS V4.2. BOTONES 19. CAPACIDAD DE LA BATERÍA 600 mA. ALTAVOZ 6 / 8O-1W. INTERFAZ soporte EXT, conector de 3,5 mm. COMPATIBILIDAD PS4 y PC (modo cableado). SENSOR sensor 3D, sensor G.CABLE MICRO USB 80 cm",
+		"stock": 1,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.ar%2FMLA-925309726-joystick-control-ps4-pc-marvo-pro-gt-80-gamepad-19-botones-_JM&psig=AOvVaw17niwcRLm34G1e0BlecNlL&ust=1714863962921000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjB1JzM8oUDFQAAAAAdAAAAABAF"
 	},
 	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
-	},
-	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
-	},
-	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
-	},
-	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
-	},
-	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
-	},
-	{
-		"id": 1,
-		"category": "Software",
-		"title": "Teclado philips",
-		"price": 20000,
-		"description": "Haz cada tarea más fácil con nuestro teclado estándar de alta calidad. Diseño ergonómico, teclas suaves y durabilidad superior te brindan una experiencia de escritura fluida y cómoda",
-		"stock": 3,
-		"pictureUrl": "https://partesinformaticas.com/wp-content/uploads/2023/02/17779.jpg"
-	},
-	{
-		"id": 2,
-		"category": "Accesorios",
-		"title": "Parlante Jbl",
-		"price": 60000,
-		"description":  "Lleva tu experiencia de juego al siguiente nivel con nuestros parlantes de alto rendimiento. Sonido envolvente, bajos potentes y claridad cristalina te sumergen en un mundo de audio de calidad",
-		"stock": 5,
-		"pictureUrl": "https://www.flickr.com/photos/200373828@N02/53626553159/in/dateposted-public/"
+		"id": 9,	
+		"category": "Gamer",
+		"title": "Teclado Gamer Redragon Fizz Pro K616 Rgb",
+		"price": 130000,
+		"description": "El K616-RGB FIZZ PRO es un teclado mecánico con un diseño 60% y 3 modos de conexión: cableado e inalámbrico por RF 2.4 GHz y también por Bluetooth 5.0. Cuenta con 61 teclas compactas, lo que no sólo aportará más espacio en tu setup, sino también un toque muy guay. Está fabricado en plástico ABS de alta resistencia, por lo que ofrece una estructura muy sólida y una mayor durabilidad ante impactos no deseados.",
+		"stock": 14,
+		"pictureUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jfcelectronica.com.ar%2FMLA-1136866676-teclado-gamer-redragon-fizz-pro-k616-rgb-60-blanco-rosa-_JM&psig=AOvVaw1Ky4ywzH_RbFJsqQ_cIjLx&ust=1714864467198000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPj8oo3O8oUDFQAAAAAdAAAAABAE"
 	}
 ]

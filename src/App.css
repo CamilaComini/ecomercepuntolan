@@ -92,6 +92,10 @@ p {
 	padding-right: 50px;
 	padding-left: 50px;
 	box-shadow: 0px 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
 }
 
 .text-links {
@@ -99,9 +103,18 @@ p {
 }
 
 .cart {
-	height: 35px;
-	width: 35px;
-}
+		width: 40px; 
+		height: 40px; 
+		background-color: yellow;
+		border-radius: 50%; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0; 
+		line-height: 40px; 
+		background-size: cover; 
+	}
+	
 
 .empty-cart-container {
 	display: flex;
@@ -156,5 +169,42 @@ p {
 .btn-font {
 	font-size: 15px;
 	margin-right: 10px;
+}
+
+.footer {
+    background-color: rgb(223, 26, 26);
+    color: white;
+	padding-right: 50px;
+	padding-left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container span {
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.footer-container span a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-nav .nav-link:hover {
+    color: black;
 }
 

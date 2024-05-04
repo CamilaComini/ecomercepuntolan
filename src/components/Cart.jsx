@@ -27,12 +27,12 @@ export const Cart = () => {
 	const { notiToastCompra } = nots();
 	const [orderId, setOrderId] = useState('');
 
-	const productos = cart.map((item) => ({
-		id: item.id,
-		brand: item.brand,
-		model: item.model,
-		cantidad: item.cantidad,
-		price: item.price,
+	const productos = cart.map((product) => ({
+		id: product.id,
+		descripcion: product.descripcion,
+		category: product.model,
+		stock: product.cantidad,
+		price: product.price,
 	}));
 
 	const comprar = (data) => {

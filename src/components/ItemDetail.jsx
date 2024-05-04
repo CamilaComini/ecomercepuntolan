@@ -2,17 +2,17 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { Botones } from './Botones';
 
-export const ItemDetail = ({ item }) => {
+export const ItemDetail = ({ product }) => {
 	return (
 		<div className="container-product-detail">
-			<img className="img-detail" src={item.pictureUrl} />
+			<img className="img-detail" src={product.pictureUrl} />
 			<div className="item-detalles">
-				<h1>{item.title}</h1>
+				<h1>{product.title}</h1>
 				<h2>
-					Categoria y Cantidad: {item.category} {item.stock}
+					Categoria y Cantidad: {product.category} {product.stock}
 				</h2>
-				<h3>Precio: $ {item.price.toLocaleString()}</h3>
-				<p>{item.desc}</p>
+				<h3>Precio: $ {product.price.toLocaleString()}</h3>
+				<p>{product.descripcion}</p>
 				<Botones item={item} />
 				<Button
 					style={{ width: '80px' }}
