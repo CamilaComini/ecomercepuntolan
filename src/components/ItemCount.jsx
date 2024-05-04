@@ -24,5 +24,5 @@ export const ItemCount = ({ onAdd, stock }) => {
             <button className="h-10 px-4 text-white rounded ml-1" onClick={handleAdd}>🛒</button>
         </div>
 
-    )
-}
+    );
+};

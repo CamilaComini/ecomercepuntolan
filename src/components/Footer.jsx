@@ -16,7 +16,7 @@ export const Footer = () => {
                         <Nav.Link as={NavLink} to="/category/Accesorios">Accesorios</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link as={NavLink} to="/category/Gamer">Software</Nav.Link>
+                        <Nav.Link as={NavLink} to="/category/Gamer">Gamer</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link as={NavLink} to="/category/Hardware">Hardware</Nav.Link>

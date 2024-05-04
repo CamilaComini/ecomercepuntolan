@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { Botones } from './Botones';
 
-export const Item = ({ product }) => {
+export const Item = ({ products }) => {
 	return (
 		<>
 			<Card style={{ width: '18rem' }}>

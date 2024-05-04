@@ -3,12 +3,13 @@ import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 import { useParams } from 'react-router-dom';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import { ItemList } from './ItemList'; 
+import { Loading } from "./Loading";
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [productImages, setProductImages] = useState([]);
-    const { id } = useParams().id;
+    const { id } = useParams();
 
     useEffect(() => {
         const db = getFirestore();
@@ -44,20 +45,14 @@ export const ItemListContainer = () => {
 
     if (loading) {
         return (
-            <>
-                <Loading loading={"Cargando productos"} />
-            </>
+                <Loading loading="Cargando"/> 
         )
     }
 
     return (
         <div className="container-cards">
-            <Banner gretings={"¡Bienvenidos a Punto Lan!"} />
-            <div>
             <h1>Lista de productos:</h1>
-            <ItemList products={products} productImages={productImages} />
+            <ItemList/>
             </div>
-        </div>
-
     );
 };

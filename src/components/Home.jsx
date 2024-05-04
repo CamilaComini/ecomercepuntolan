@@ -5,7 +5,7 @@ export const Home = () => {
         <div className="container-home">
             <div className="video-container">
                 <video autoPlay controls>
-                    <source src="../video/ellos.mp4" type="video/mp4" />
+                    <source src="https://www.youtube.com/embed/EvhQ_jkeWLg" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
