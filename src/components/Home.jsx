@@ -1,11 +1,12 @@
 import React from 'react';
+import video from '../video/ellos.mp4';
 
 export const Home = () => {
     return (
         <div className="container-home">
             <div className="video-container">
                 <video autoPlay controls>
-                    <source src="https://www.youtube.com/embed/EvhQ_jkeWLg" type="video/mp4" />
+                    <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
