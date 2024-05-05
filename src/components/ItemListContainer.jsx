@@ -1,14 +1,13 @@
-import { useEffect, useState } from 'react';
-import { getStorage, ref, getDownloadURL } from 'firebase/storage';
+import { ItemList } from './ItemList'
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
-import { ItemList } from './ItemList'; 
-import { Loading } from "./Loading";
+import { Loading } from './Loading';
+import { collection, getFirestore, getDocs, query, where } from 'firebase/firestore';
 
 export const ItemListContainer = () => {
-    const [products, setProducts] = useState([]);
+    const [items, setitems] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [productImages, setProductImages] = useState([]);
+
     const { id } = useParams();
 
     useEffect(() => {
@@ -16,43 +15,33 @@ export const ItemListContainer = () => {
         setLoading(true);
         let refCollection;
 
-        if (!id) refCollection = collection(db, "products")
+        if (!id) refCollection = collection(db, "items")
         else {
-            refCollection = query(collection(db, "products"), where("categoryId", "==", id))
+            refCollection = query(collection(db, "items"), where("categoryId", "==", id))
         }
 
         getDocs(refCollection).then((snapshot) => {
-            const productsData = snapshot.docs.map((doc) => {
+            setitems(snapshot.docs.map((doc) => {
                 return { id: doc.id, ...doc.data() };
-            });
-            setProducts(productsData);
+            }));
             setLoading(false);
-
-            const storage = getStorage();
-            const promises = productsData.map((product) => {
-                const imageUrlRef = ref(storage, 'productos/' + product.id); 
-                return getDownloadURL(imageUrlRef);
-            });
-            Promise.all(promises).then((urls) => {
-                setProductImages(urls);
-            }).catch((error) => {
-                console.error('Error al obtener las URLs de las imágenes:', error);
-            });
-        }).catch((error) => {
-            console.error('Error al obtener los productos:', error);
         });
     }, [id]);
 
     if (loading) {
         return (
-                <Loading loading="Cargando"/> 
+            <>
+                <Loading loading={"Cargando productos"} />
+            </>
         )
     }
 
     return (
-        <div className="container-cards">
-            <h1>Lista de productos:</h1>
-            <ItemList/>
+        <div className='min-h-max'>
+            <div className="flex flex-wrap justify-center items-center gap-4 my-4">
+                <ItemList items={items} />
             </div>
+        </div>
+
     );
 };

@@ -30,8 +30,8 @@ export const Cart = () => {
 	const productos = cart.map((product) => ({
 		id: product.id,
 		descripcion: product.descripcion,
-		category: product.model,
-		stock: product.cantidad,
+		category: product.category,
+		stock: product.stock,
 		price: product.price,
 	}));
 
