@@ -42,4 +42,3 @@ export const Botones = ({ item }) => {
 		</div>
 	);
 };
-

@@ -24,11 +24,11 @@ export const CartTable = () => {
                     {cart.map((item) => (
                         <tr key={item.id}>
                             <td>
-                                {item.brand} {item.model}
+                                {item.title} {item.category}
                             </td>
                             <td>$ {item.price}</td>
                             <td>{item.cantidad}</td>
-                            <td>${(item.price * item.cantidad)}</td>
+                            <td>${item.price * item.cantidad}</td>
                             <td style={{ textAlign: 'center' }}>
                                 <img
                                     onClick={() => deleteItem(item.id)}
@@ -50,7 +50,7 @@ export const CartTable = () => {
                 </tbody>
             </Table>
             <div className="d-flex align-items-center justify-content-between">
-                <Button variant="dark" onClick={removeList}>
+                <Button variant="black" onClick={removeList}>
                     VACIAR CARRITO
                 </Button>
             </div>

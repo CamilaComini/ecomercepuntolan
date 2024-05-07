@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
 import { CartWidget } from './CartWidget';
 
 export const NavBar = () => {
-    const { cart } = useContext(CartContext);
-    const cantidadProd = cart.length;
 
     return (
         <Navbar className="cssNav sticky-top">
@@ -34,7 +30,7 @@ export const NavBar = () => {
                 </NavDropdown>
             </Nav>
             <Link to="/cart" className="text-links">
-                <CartWidget cant={cantidadProd} />
+                <CartWidget />
             </Link>
         </Navbar>
     );

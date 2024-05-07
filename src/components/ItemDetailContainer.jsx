@@ -1,23 +1,43 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-
+import { getFirestore, getDoc, doc } from 'firebase/firestore';
 import { ItemDetail } from './ItemDetail';
-import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import { Loading } from './Loading';
 
-export const ItemDetailContainer = () => {
-	const [itemsPorId, setItemsPorId] = useState();
-	const id = useParams().id;
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		const db = getFirestore();
+    const { id } = useParams();
 
-		const product = doc(db, 'items', id);
+    useEffect(() => {
+        const db = getFirestore();
+        setLoading(true);
+        const refDoc = doc(db, "items", id);
 
-		getDoc(product).then((response) => {
-			response.exists() && setItemsPorId({ id: id, ...response.data() });
-		});
-	}, [itemsPorId]);
+        getDoc(refDoc).then((snapshot) => {
+            setProduct({ id: snapshot.id, ...snapshot.data() });
+            setLoading(false);
+        });
 
-	return <>{!itemsPorId ? <Loading /> : <ItemDetail item={itemsPorId} />}</>;
+    }, [id]);
+
+    if (loading) {
+        return (
+            <>
+                <Loading loading={"Cargando producto"} />
+            </>
+        )
+    }
+
+    return (
+        <div className='min-h-max'>
+            <div className="flex flex-col flex-wrap justify-center items-center gap-4 my-4">
+                <ItemDetail product={product} />
+            </div>
+        </div>
+
+    );
 };
+
+export default ItemDetailContainer;

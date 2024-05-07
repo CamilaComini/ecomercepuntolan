@@ -1,37 +1,35 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { Botones } from './Botones';
 
-export const Item = ({ id, pictureUrl, description , price, category, title }) => {
-    return (
-        <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={pictureUrl} className="card-img" />
-                <Card.Body>
-                    <Card.Title>
-                        {title} {category}
-                    </Card.Title>
-                    <Card.Subtitle>
-                        Precio: $ {price}
-                    </Card.Subtitle>
-                    <Card.Text className="mb-1">
-                        Categoria: {description}
-                    </Card.Text>
+export const Item = ({ product }) => {
+    const navigate = useNavigate();
 
-                    <Button
-                        className="mb-2"
-                        variant="outline-secondary"
-                        to={`/item/${id}`}
-                        as={NavLink}
-                        size="sm"
-                    >
-                        Info
-                    </Button>
-                    <Botones item={{ title,id, pictureUrl, description , price, category }} />
-                </Card.Body>
-            </Card>
-        </>
+    return (
+        <Card style={{ width: '18rem' }} onClick={() => navigate(`/item/${product.id}`)}>
+            <Card.Img variant="top"  className="card-img" src={product.imageUrl} />
+            <Card.Body>
+                <Card.Title>
+                    {product.title}
+                </Card.Title>
+                <Card.Subtitle>
+						Precio: $ {product.price}
+				</Card.Subtitle>
+                <Card.Text className="mb-1">
+						Categoria: {product.category}
+				</Card.Text>
+                <Button
+						className="mb-2"
+						variant="outline-secondary"
+						to={`/item/${product.id}`}
+						size="sm"
+					>
+						Info
+					</Button>
+					<Botones item={product} />
+            </Card.Body>
+        </Card>
     );
 };

@@ -1,47 +1,43 @@
-import { ItemList } from './ItemList'
-import { useState, useEffect } from 'react'
+import { ItemList } from './ItemList';
+import { useEffect, useState } from 'react';
+import {
+	collection,
+	getDocs,
+	getFirestore,
+	query,
+	where,
+} from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
-import { Loading } from './Loading';
-import { collection, getFirestore, getDocs, query, where } from 'firebase/firestore';
 
-export const ItemListContainer = () => {
-    const [items, setitems] = useState([]);
+const ItemListContainer = () => {
+	const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+	const { id } = useParams()
 
-    const { id } = useParams();
-
-    useEffect(() => {
-        const db = getFirestore();
+	useEffect(() => {
+		const db = getFirestore();
         setLoading(true);
-        let refCollection;
+		let refCollection;
 
         if (!id) refCollection = collection(db, "items")
-        else {
-            refCollection = query(collection(db, "items"), where("categoryId", "==", id))
-        }
-
-        getDocs(refCollection).then((snapshot) => {
-            setitems(snapshot.docs.map((doc) => {
-                return { id: doc.id, ...doc.data() };
-            }));
-            setLoading(false);
-        });
-    }, [id]);
-
-    if (loading) {
+            else {
+                refCollection = query(collection(db, "items"), where("categoryId", "==", id))
+            }
+            getDocs(refCollection).then((snapshot) => {
+                setProducts(snapshot.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() };
+                }));
+                setLoading(false);
+            });
+        }, [id]);
         return (
-            <>
-                <Loading loading={"Cargando productos"} />
-            </>
-        )
-    }
-
-    return (
-        <div className='min-h-max'>
-            <div className="flex flex-wrap justify-center items-center gap-4 my-4">
-                <ItemList items={items} />
+            <div className='min-h-max'>
+                <div className="flex flex-wrap justify-center items-center gap-4 my-4">
+                    <ItemList products={products} />
+                </div>
             </div>
-        </div>
-
-    );
+	);
 };
+
+
+export default ItemListContainer;
