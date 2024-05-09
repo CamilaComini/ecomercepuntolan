@@ -138,24 +138,32 @@ p {
 }
 
 .container-cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-	padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px 0;
+    flex-direction: row; 
+}
+
+.card {
+    width: calc(50% - 10px); 
+    transition: 0.5s;
 }
 
 .card-img {
-	height: 190px;
+    width: 100%;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 #basic-nav-dropdown {
 	color: white;
-}
-
-.button-container {
-	display: flex;
-	align-items: center;
 }
 
 .card {

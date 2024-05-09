@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 export const EmptyCart = () => {
 	return (
 		<div className="empty-cart-container">
-			<h1 className="m-4">CARRITO VACIO</h1>
+			<h1 className="m-4">Descubre un mundo de posibilidades con la tecnología que transformará tu vida para siempre...</h1>
 			<Button variant="dark" to="/products" as={Link}>
-				Elegir un producto
+			¡Listo para elegir tu próximo producto tecnológico! 
 			</Button>
 		</div>
 	);

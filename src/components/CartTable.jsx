@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Table from 'react-bootstrap/Table';
 import { CartContext } from '../context/CartContext';
 import Button from 'react-bootstrap/Button';
-import deleteIcon from '../assets/pngtree-trash-bin-clip-art-png-image_2848384-removebg-preview.png'; 
+import deleteIcon from '../assets/FaTrash.png'; 
 
 export const CartTable = () => {
     const { cart, removeList, precioTotal, deleteItem } = useContext(CartContext);
